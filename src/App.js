@@ -31,13 +31,32 @@ const App = () => {
         name: 'Redux',
         exercises: 11,
         id: 4
-      } ]
+      } 
+    ]
+
+  const arrays = [
+    {
+      name: 'Node.js',
+      exercises: 4,
+      id: 1
+    },
+    {
+      name: 'Routing',
+      exercises: 3,
+      id: 2
+    },
+    {
+      name: 'Middlewares',
+      exercises: 7,
+      id: 3
+    }
+  ]
 
   return (
     <div>
         <Course course={course} />
         <Content parts={parts}/>
-        <Statistics parts={parts}/>
+        <Statistics arrays={arrays}/>
     </div>
   )
 }

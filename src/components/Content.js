@@ -12,7 +12,7 @@ const Content = ({parts}) => {
             )}
             </ul>
 
-        Total: {parts.reduce((acc, currentValue) => acc + currentValue.exercises, 0)}
+        <b>Total: {parts.reduce((acc, currentValue) => acc + currentValue.exercises, 0)} </b>
         </div>
       
     )
