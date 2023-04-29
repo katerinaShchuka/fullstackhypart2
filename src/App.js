@@ -1,6 +1,7 @@
 import React from "react";
 import Course from "./components/Course";
-import Content from "./components/Content"
+import Content from "./components/Content";
+import Statistics from "./components/Statistics"
 
 const App = () => {
 
@@ -25,12 +26,18 @@ const App = () => {
         name: 'State of a component',
         exercises: 14,
         id: 3
+      },
+    {
+        name: 'Redux',
+        exercises: 11,
+        id: 4
       } ]
 
   return (
     <div>
         <Course course={course} />
         <Content parts={parts}/>
+        <Statistics parts={parts}/>
     </div>
   )
 }
